@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego tres en raya</title>
+    <!-- Incorporamos bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fuentes utilizadas de google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <h1>TRES EN RAYA</h1>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div id="jugadores" class="col-12">
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Player 1</label>
+                        <input type="text" class="form-control maquina" placeholder="Insert a name" id="player1">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Player 2</label>
+                        <input type="text" class="form-control jugador" placeholder="Insert a name" id="player2">
+                    </div>
+                    <button type="button" class="btn btn-success" id="botonInicio" value="start">Start Game</button>
+                    <label for="" id="turnoPlayer"></label>
+                </form>
+            </div>
+        </div>
+
+        <div id="juego">
+            <!-- Casillas de juego, contamos desde 0 para coincidir posiciones con array -->
+            <div class="row">
+                <input type="button" class="btn btn-primary col-4" id="c0">
+                <input type="button" class="btn btn-primary col-4" id="c1">
+                <input type="button" class="btn btn-primary col-4" id="c2">
+
+
+                <input type="button" class="btn btn-primary col-4" id="c3">
+                <input type="button" class="btn btn-primary col-4" id="c4">
+                <input type="button" class="btn btn-primary col-4" id="c5">
+
+
+                <input type="button" class="btn btn-primary col-4" id="c6">
+                <input type="button" class="btn btn-primary col-4" id="c7">
+                <input type="button" class="btn btn-primary col-4" id="c8">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Realizado por
+        <div>
+            <img src="https://www.somagnews.com/wp-content/uploads/2020/04/75-e1586981465263.png" alt="">c-mega
+        </div>
+
+    </footer>
+</body>
+
+</html>
